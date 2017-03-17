@@ -1,22 +1,20 @@
 <?php include("header.php");?>
+<?php include("sendkontakt.php"); ?>
+
+
 
 <div class="container">
 <div class="jumbotron vertical-center text-center">
-<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-	<div class="row">
-		<label for="name">Dit navn:</label><br />
-		<input id="name" class="input" name="name" type="text" value="" size="30" placeholder="Indtast navn" /><br />
-	</div>
-	<div class="row">
-		<label for="email">Din email:</label><br />
-		<input id="email" class="input" name="email" type="text" value="" size="30" placeholder="Indtast email" /><br />
-	</div>
-	<div class="row">
-		<label for="message">Din besked:</label><br />
-		<textarea id="message" class="input" name="message" rows="7" cols="30" placeholder="SKriv din besked her"></textarea><br />
-	</div>
-	<input id="submit_button" type="submit" value="Send email" />
-</form>	
+<form action="" method="post">
+First Name: <input type="text" name="k_fnavn"><br>
+Last Name: <input type="text" name="k_enavn"><br>
+Email: <input type="text" name="k_email"><br>
+Emne: <input type="text" name="k_emne"><br>
+Message:<br><textarea rows="5" name="besked" cols="30"></textarea><br>
+<input type="submit" name="sendbesked" value="Submit">
+</form>
+
 </div>
-</div>					
+</div>	
+ 
 <?php include("footer.php");?>
