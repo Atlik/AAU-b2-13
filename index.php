@@ -27,30 +27,9 @@
 <tr>
 <p>hej</p>
 <?php
-$servername = "localhost";
-$username = "forum";
-$password = "Mikkel101";
-$dbname = "test";
+include("dbconnectadminlogin.php");
+include("admingetcontent.php");
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-
-$sql = "SELECT data FROM data";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo  $row["data"]. "<br>";
-    }
-} else {
-    echo "0 results";
-}
-$conn->close();
 ?>
 </tr>
 </table>
@@ -71,26 +50,10 @@ $conn->close();
 </div>
 </div>
 <?php
- include("dbconnect.php");
+include("dbconnect.php");
+include("nyhedsbrev.php");
 
-if(isset($_POST['registrer'])){
-	// create vars
-	$email = $_POST['n_email'];
-	// validate
-	if(!strpos($email, "@") | !strpos($email, ".") | strpos($email, " "))
-		die("<p>invalid email</p>");
 
-	$email_exists = mysqli_query($connection, "SELECT * FROM `brugere` WHERE `email` LIKE '$email'") or die();
-
-	if(mysqli_num_rows($email_exists) > 0){
-		die("Denne email er allerede tilmeldt");
-
-	}
-
-	$sql = "INSERT INTO `brugere` (`email`) VALUES ('$email')";
-		mysqli_query($connection, $sql);
-		echo "Account created";
-}
 
 ?>	
 		
