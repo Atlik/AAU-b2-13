@@ -20,7 +20,6 @@
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="styles/blog_style.css">
-
 </head>
 
 <body>
@@ -61,34 +60,18 @@
 			<li> <a href="nyflad.php"> Home </a> </li>
 			<li> <span>&#8250;</span> </li>
 			<li><a href="blog_list.php">Blog list </a> </li>
+			<li><span>&#8250;</span></li>
+			<li><a href="show_blog_info.php">You are here</a></li>
 		</ul>
 	</div>
 </section>
 
-
 <section>
-<!-- Denne section skulle gerne kunne genere disse nyheder som de bliver skrevet ind -->
-	<div id="blog_news_spot">
-		<article class="spot">
-				<div class="blog_picture" style="background: url(img/Full_image_placeholder.jpg) no-repeat 0px 0px;">
-				</div>
-				<div class="blog_text">
-					<a href="show_blog_info.php"> Read more <!-- Link til php der generere den bestemte nyhed  --> </a>
-				</div>
-		</article>
+	<?php 
 
-		<article class="spot">
-				<div class="blog_picture" style="background: url(img/Full_image_placeholder.jpg) no-repeat 0px 0px;">
-				</div>
-			<div class="blog_text">
-				<a href="show_blog_info.php"> Read more <!-- Link til php der generere den bestemte nyhed  --> </a>
-			</div>
-		</article>
-	</div>	
+
+
+
+	?>
 </section>
-
-</body>
-
-</html>
-
 
