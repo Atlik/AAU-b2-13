@@ -28,8 +28,6 @@
 
 #breadcrumb ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
 }
 
@@ -38,18 +36,49 @@
 }
 
 #breadcrumb li a {
-    display: block;
-    color: black;
     padding: 8px;
     text-decoration: none;
 }
 
-span {
-  content: "\203A";
-  padding: 8px;
-  display: inline-block;
+#breadcrumb la a:hover{
+	color: #13c4a5;
 }
 
+span {
+	content: "\203A";
+	padding: 8px;
+}
+
+#blog_news_spots{
+	margin: 0 1.488095238095238%;
+}
+
+#blog_news_spot .spot {
+  	display: inline;
+  	float: left;
+  	width: 47.023809523809526%;
+  	height: 35%;
+  	margin: 0 1.488095238095238%;
+
+}
+
+.spot .blog_text {
+	background-color: light-grey; 
+	height: 33.3%;
+
+}
+
+.spot .blog_picture{
+	background-size: contain;
+
+    overflow:hidden;
+    -webkit-border:50px;
+    -moz-border:50px;
+    border:50px;
+    width: 100%;
+    height:90px;
+    margin: 10px;
+}
 </style>
 
 </head>
@@ -96,12 +125,27 @@ span {
 	</div>
 </section>
 
+
 <section>
-	
+<!-- Denne section skulle gerne kunne genere disse nyheder som de bliver skrevet ind -->
+	<div id="blog_news_spot">
+		<article class="spot">
+				<div class="blog_picture" style="background: url(img/Full_image_placeholder.jpg) no-repeat 0px 0px;">
+				</div>
+				<div class="blog_text">
+					<a href="#"> Read more <!-- Link til php der generere den bestemte nyhed  --> </a>
+				</div>
+		</article>
 
-
+		<article class="spot">
+				<div class="blog_picture" style="background: url(img/Full_image_placeholder.jpg) no-repeat 0px 0px;">
+				</div>
+			<div class="blog_text">
+				<a href="#"> Read more <!-- Link til php der generere den bestemte nyhed  --> </a>
+			</div>
+		</article>
+	</div>	
 </section>
-
 
 </body>
 
