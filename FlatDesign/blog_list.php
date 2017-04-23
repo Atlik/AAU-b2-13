@@ -70,11 +70,11 @@
 <!-- Denne section skulle gerne kunne genere disse nyheder som de bliver skrevet ind -->
 	<div id="blog_news_spot">
 		<article class="spot">
-				<div class="blog_picture" style="background: url(img/Full_image_placeholder.jpg) no-repeat 0px 0px;">
-				</div>
-				<div class="blog_text">
+			<div class="blog_picture" style="background: url(img/Full_image_placeholder.jpg) no-repeat 0px 0px;">
+			</div>
+			<div class="blog_text">
 					<a href="show_blog_info.php"> Read more <!-- Link til php der generere den bestemte nyhed  --> </a>
-				</div>
+			</div>
 		</article>
 
 		<article class="spot">
