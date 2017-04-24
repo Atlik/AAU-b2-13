@@ -9,9 +9,13 @@
 <body>
     <div id="pageFont">
   <p id="HomeP">Home</p> &nbsp
+  
   <p id="Triangle1P">&#9658</p>
+  
   <p id="ContactP">Contact</p> 
+  
   <p id="Trinagle2P">&#9658</p> 
+  
   <p id="ContactP">Contact us</p>
  
     <br> <br>
