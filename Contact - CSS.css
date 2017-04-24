@@ -1,0 +1,106 @@
+        #pageFont{
+            font-family: arial;
+        }
+        
+        body{
+            background-image : url(phonelaptop.jpg);
+            background-size: 1366px 768px; 
+        }
+        
+        #HomeP{  
+            float: left;            
+        }
+
+        #Triangle1P{
+            
+            float: left;
+        }
+        
+        #ContactP{ 
+            float: left;
+        }
+        
+        #Trinagle2P{
+            float: left;
+        }
+
+        .ContactInfo{
+            background: white;
+            opacity: 0.8;
+            color:black;
+            font-weight: bold;
+            /*margin-left: 35px;
+            
+            text-align: left;
+            float: left;*/
+            margin-right: 700px;
+            padding-bottom: 2px;
+            padding-left: 30px;
+            padding-top: 1px;
+        }
+        
+        h2{
+            
+            margin-bottom: -5px;
+            /*margin-left: 35px;*/
+        }
+        
+        .informationFields{
+            margin-top: 30px;
+        }
+        
+        .locationPin{
+           
+        }
+        
+        #messageField{
+            width: 360px;
+            height: 150px;
+        }
+        
+        #submitField{
+            color:white;
+            border: 1px;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 170px;
+            width: 190px;
+            background: #3399ff;
+            font-size: 19;
+        
+            font-weight: bold;
+        }
+        
+        .Footer1{
+            background: #0066cc;
+            color: white;
+            font-size: 30; 
+        }
+        
+        h3{
+            margin-left: 120px;
+            margin-bottom: -15px;
+        }
+        
+        .footerBoxes{
+           font-size: 18;
+           padding-left: 100px;
+           float: left;           
+           
+        }
+        
+        .footerContactInfo{
+            font-size: 15;
+            padding-top: 18px;
+            padding-left: 440px;
+            }
+        
+        .Footer2{
+            background: #003399;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            padding-right: 250px;
+            font-size: 13;
+            
+        }
