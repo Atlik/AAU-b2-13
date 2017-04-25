@@ -68,10 +68,18 @@
 
 <section>
 	<?php 
-
-
-
-
+		require_once 'DB/db_connect.php';
+		$row = mysqli_fetch_assoc($results);
 	?>
+	<div>
+		<title> <?php echo $row['TITLE']; ?> </title>
+		<h5> <?php echo $row['AUTHOR']; ?> </h5>
+		<h6> <?php echo $row['DATE']; ?> </h6>
+		<p> <?php echo $row['TEXT']; ?> </p>
+	</div>
+	<?php mysqli_close($connection); ?>
 </section>
+
+</body>
+</html>
 
