@@ -20,7 +20,6 @@
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="styles/blog_style.css">
-
 </head>
 
 <body>
@@ -68,12 +67,28 @@
 
 <section>
 <!-- Denne section skulle gerne kunne genere disse nyheder som de bliver skrevet ind -->
-	<div id="blog_news_spot">
+
+<div id="blog_news_spot">
+	<article class="spot">
+<?php  
+require_once 'DB/db_connect.php';
+$row = mysqli_fetch_assoc($results);
+?> 
+		<div class="blog_picture" style="background-image: url(img/Full_image_placeholder.jpg) /*<?php echo $row['PICTURE']; ?> datatypen virker ikke endnu...*/ no-repeat 0px 0px;">
+		</div>
+		<div class="blog_text"> 
+			<a href="show_blog_info.php"> <?php echo $row['TITLE']; ?> </a>
+		</div>
+	</article>
+	<?php mysqli_close($connection); ?>
+</div>
+
+<!--	<div id="blog_news_spot">
 		<article class="spot">
 			<div class="blog_picture" style="background: url(img/Full_image_placeholder.jpg) no-repeat 0px 0px;">
 			</div>
 			<div class="blog_text">
-					<a href="show_blog_info.php"> Read more <!-- Link til php der generere den bestemte nyhed  --> </a>
+					<a href="show_blog_info.php"> Read more <!-- Link til php der generere den bestemte nyhed   </a>
 			</div>
 		</article>
 
@@ -81,14 +96,12 @@
 				<div class="blog_picture" style="background: url(img/Full_image_placeholder.jpg) no-repeat 0px 0px;">
 				</div>
 			<div class="blog_text">
-				<a href="show_blog_info.php"> Read more <!-- Link til php der generere den bestemte nyhed  --> </a>
+				<a href="show_blog_info.php"> Read more <!-- Link til php der generere den bestemte nyhed   </a>
 			</div>
 		</article>
-	</div>	
+	</div>	-->
 </section>
 
 </body>
 
 </html>
-
-
