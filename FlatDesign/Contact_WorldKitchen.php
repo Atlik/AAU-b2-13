@@ -28,8 +28,8 @@
 
 </head>
 
-<body> <!--style="background-image:url(phonelaptop1.jpg)"-->
-<div class="backgroundImage">
+<body>
+<!--<div class="backgroundImage">-->
 <!--[if IE]>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
     <style>.chromeFrameInstallDefaultStyle { width: 100%; border: 5px solid #ffa700; }</style><div id="prompt"></div>
@@ -61,30 +61,39 @@
 		<a href="#menu-footer" class="menu-btn"></a>
 	</nav>
 </div>
+
+<section id="breadCrumbsSection">
+	<div id="breadCrumbs">
+			<a href="nyflad.php"> Home </a>
+			&nbsp &#x25BA &nbsp
+			<a href="nyflad.php">Contact</a>
+			&nbsp &#x25BA &nbsp
+			<a href="Contact_WorldKitchen.php"> Contact us </a>
+	</div>
+</section>
 		<!---------------MENU----------------->
    
    <section>
     <h1>Contact us</h1>
 	 
 		<!---------------COMPANY INFORMATION----------------->    
-    <div class="ContactInfo">
-	<h2>Worldkitchen</h2><br><br><br>      
+	<div class="contactTitle">Worldkitchen</div>
+	<div class="ContactInfo">     
 	Catarina Figuerdo Bettencourt   <br>+45 12 34 56 78<br>
-	<!--<div class="locationpin"> <img src="locationpin.png" height="45" width="33"> </div>-->
 	3th Floor, Aalborg University  <br>CatarinaBettencourt@gmail.com<br>
     Denmark, Aalborg 9000
     </div>
 		<!---------------COMPANY INFORMATION----------------->
 		
 		<!---------------USERINPUT----------------->
-<form action="###" method="POST">
-   
+
+  <form action="Contact_WorldKitchen.php" method="POST"> 
     <div class="InformationFields">    
-		<input type="text" id="nameField" name="name" placeholder= "Your Name:" required="required"> <br><br>
+		<input type="text" id="nameField" style="border:1px solid #ff0000" name="name" placeholder= "Your Name:" required="required"> <br><br>
         <input type="text" id="topicField" name="topic" placeholder= "Your Topic:" required="required"> <br><br>
         <input type="text" id="mailField" name="mail" placeholder= "Your Mail:" required="required"> <br><br>
         <input type="text" id="phonenumberField" name="phonenumber" placeholder= "Your Phonenumber:" required="required"> <br><br>
-        <input type="text" id="messageField" name="message" placeholder="Your Message:" required="required" 
+        <input type="text" id="messageField" name="message" placeholder="Your Message:" required="required" maxlength="10"> 
     </div>    
 
 	<div>
@@ -95,18 +104,16 @@
 		<!---------------USERINPUT----------------->
 
 		<!---------------FOOTER-------------------->
-<div id="pageFont"> 
 	<div class="Footer1">
-    
-    <h3>Menu &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Contact</h3>
-    <!--<h4>Contact</h4> -->
+    <div class="menuFooter">Menu</div>
+	<div class="contactFooter">Contact</div>
     <div class="footerBoxes">
         <ul type="square">
-			<li>Home</li> 
-			<li>Blog</li> 
-			<li>About</li> 
-			<li>Contact</li> 
-			<li>Buy ticket</li>
+			<a href="BreadcrumbsHome.php"><li>Home</li> </a>
+			<a href="BreadcrumbsBlog.php"><li>Blog</li> </a>
+			<a href="BreadcrumbsAbout.php"><li>About</li> </a>
+			<a href="BreadcrumbsContact.php"><li>Contact</li> </a>
+			<a href="BreadcrumbsTicket.php"><li>Buy ticket</li> </a>
          </ul>
     </div>
       
@@ -124,11 +131,23 @@
    <div class="Footer2">
     Copyright © 2017 Worldconflict. All rights reserved.
    </div>
-</div>
 		<!---------------FOOTER----------------->
-</div>
-</body>
-<?php
+<!--</div>-->
 
+<?php
+$name_Field= $_POST['name'];
+$topic_Field= $_POST['topic'];
+$mail_Field= $_POST['mail'];
+$phone_Field= $_POST['phonenumber'];
+$message_Field= $_POST['message'];
+
+$fh = fopen("WorldKitchen Mail list.txt","w") or die("The file could not be created");
+	fwrite($fh, $name_Field) or die ("Could not write to file. Check if all textfields have been filled out");
+	fwrite($fh, $topic_Field) or die ("Could not write to file. Check if all textfields have been filled out");
+	fwrite($fh, $mail_Field) or die ("Could not write to file. Check if all textfields have been filled out");
+	fwrite($fh, $phone_Field) or die ("Could not write to file. Check if all textfields have been filled out");
+	fwrite($fh, $message_Field) or die ("Could not write to file. Check if all textfields have been filled out");
+fclose($fh);
 ?>
+</body>
 </html>

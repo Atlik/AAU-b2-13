@@ -1,36 +1,62 @@
-        #pageFont{
-        font-family: arial;}
-        
+        #breadcrumbs{
+            float:left;
+            font-weight: bold;
+            text-align: center;}
+
         .backgroundImage{
         background-image: url("phonelaptop.jpg");
         background-size: 1920px 1080px;
         background-repeat: no-repeat;
         background-position: center;}
-        
-        h3{
-        text-align: center;}
-        
-        .ContactInfo{
-        /*
-        background: white;
-        color:black;
-        font-weight: bold;
-        text-align: left;
-        */
-        text-align: center;
-        background: pink;}
 
+        .contactTitle{
+        color: white;
+        font-size: 30;
+        background: rgb(34,167,211);
+        margin-right: 300px;
+        margin-left: 300px;
+        /*border-radius: 5px 5px 0px 0px;*/}
+
+        .ContactInfo{
+        clear: inherit;
+        background: rgb(34,167,211);
+        color:white;
+        font-weight: bold;        
+        text-align: center;
+        margin-right: 300px;
+        margin-left: 300px;
+       /* border-radius: 0px 0px 5px 5px;*/}
+    
         .informationFields{
         margin-top: 30px;}
+        
+        #nameField{
+        line-height: 5px;
+        height:25px;}
+
+        #topicField{
+        line-height: 5px;
+        height:25px;}
+        
+        #mailField{
+        line-height: 5px;
+        height:25px;}
+
+        #phonenumberField{
+        line-height: 5px;
+        height:25px;}
+        
+        #messageField{
+        line-height: 5px;
+        width: 360px;
+        height: 150px;
+        padding-bottom: 120px;
+        maxlength:10;}        
         
         .locationPin{
         margin-left: 750px;
         margin-right: 150px;
         text-align: right;}
-        
-        #messageField{
-        width: 360px;
-        height: 150px;}
         
         #submitField{
         color:white;
@@ -43,25 +69,35 @@
         font-size: 19;
         font-weight: bold;}
         
+        .menuFooter{
+        float:left;
+        padding-left: 760px;}
+        
+        .contactFooter{
+        margin-right: 400px;    
+        margin-left: 10px;}
+        
         .Footer1{
         background: #0066cc;
         color: white;
         font-size: 30;
         text-align: center;
-        margin: auto;}
+        margin-top: -13px;}
         
         .footerBoxes{
         font-size: 18;
         padding-left: 93px;
         float: left;
         text-align: left;
-        margin-left: 675px;}
+        margin-left: 675px;
+        }
         
         .footerContactInfo{
         font-size: 18;
-        text-align: left;
+        text-align: center;
         margin-right: 600px;
-        margin-left: 1036px;}
+        margin-left: 1036px;
+        }
         
         .Footer2{
         background: #003399;
