@@ -55,28 +55,29 @@ The value given to the options allows an automatic scrolling feature whereas the
 
 <a class="scroll-point" id="home"></a>
 
-<div class="sectiongrey">
-	<section>
-		<div id="image_home" style=" 
-			background: url(anna_catarina1.jpg) 
-			no-repeat 0px 0px; 
-			background-size: cover;">
-		</div>
-	</section>
-</div>
+<!-- forsøg på at indsætte billede, har indset at ny css skal laves eftersom style.css og styles2.css der styrer wrappers og sliding mekanism er forældede og passer til det gamle design. -->
+
+<!-- Try outs before realising that old css files should be rewamped -->
+
+<section>
+	<div id="image_home" style=" 
+		background: url(anna_catarina1.jpg) 
+		no-repeat 0px 0px; 
+		background-size: cover;">
+	</div>
+</section>
 
 <a class="scroll-point" id="blog"></a>
 
-<div class="sectiongrey">
-	<section>
-			<div id="image_blog" style="
-				background: url(home_img/DSC_7480.jpg) 
-				no-repeat 0px 0px; 
-				background-size: cover;">
-			
-			</div>
-	</section>
-</div>
+<section>
+	<div id="image_blog" style="
+		background: url(home_img/DSC_7480.jpg) 
+		no-repeat 0px 0px; 
+		background-size: cover;">
+	
+	</div>
+</section>
+
 
 <a class="scroll-point" id="about"></a>
 
