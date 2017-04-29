@@ -5,16 +5,14 @@
 	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="chrome=1"><![endif]-->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="format-detection" content="telephone=no"/>
+	<!--Makes sure that phonenumbers don't get flagged as links-->
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
 	<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
 	<link rel="dns-prefetch" href="http://ajax.googleapis.com/">
+	 <!--The user's visible area of a web page.-->
 	<link rel="dns-prefetch" href="http://html5shim.googlecode.com/">
 	<link rel="dns-prefetch" href="http://google-analytics.com/">
 	<link rel="shortcut icon" href="img/favicon.ico">
-	<link rel="apple-touch-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72-ipad.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114-retina.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144-retina.png">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic">
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
@@ -30,25 +28,28 @@
 <![endif]-->
 
 
+		<!---------------MENU BEGIN----------------->
 <a class="scroll-point" id="home"></a>
+
+<div id="top"> <!--Displays the top menu and allows the user to click on a link and be taken to that section-->
 
 <div id="top">
 	<nav>
 		<ul id="menu">
 			<li><a href="#home">Home</a></li>
-            <li><a href="#about">About us</a></li>
-			<li><a href="#freebies">Blog</a></li>
-			<li><a href="#contact">Contact us</a></li>
-			<li><a href="#payment">Get tickets</a></li>
+			<li><a href="#blog">Blog</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#payment">Buy tickets</a></li>			
 		</ul>
 		<form class="menu-dropdown hidden">
-			<select onchange="location = this.options[this.selectedIndex].value;">
+			<select onchange="location = this.option[this.selectedIndex].value;">
 				<option value="#home">Home</option>
-                <option value="#about">About us</option>
-            	<option value="#freebies">Blog</option>
-            	<option value="#contact">Contact us</option>
-            	<option value="payment">Get tickets</option>
-			</select>
+                <option value="#blog">Blog</option>
+            	<option value="#about">About</option>
+            	<option value="#contact">Contact</option>
+            	<option value="#payment">Buy tickets</option>
+			</select>			
 		</form>
 		<a href="#menu-footer" class="menu-btn"></a>
 	</nav>
@@ -57,7 +58,7 @@
 <section>
 	<div id="breadcrumb">
 		<ul>
-			<li> <a href="nyflad.php"> Home </a> </li>
+			<li> <a href=".../Flatdesign/home_page.php"> Home </a> </li>
 			<li> <span>&#8250;</span> </li>
 			<li><a href="blog_list.php">Blog list </a> </li>
 		</ul>

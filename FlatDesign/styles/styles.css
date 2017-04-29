@@ -6,7 +6,6 @@ body {
   width: 100%;
   *zoom: 1;
   font-family: 'Source Sans Pro', sans-serif;
-  background:transparent;
 }
 body:before, body:after {
   content: "";
