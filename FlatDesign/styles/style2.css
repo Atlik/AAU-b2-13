@@ -1,0 +1,43 @@
+
+.wrapper {
+   width: 600px;
+   margin: 0px auto;
+}
+
+.slides {
+   width: 600px;
+   height: 300px;
+   overflow: hidden;
+}
+
+.slides .slide {
+   width: 600px;
+   height: 300px;
+   float: left;
+}
+
+.buttons li {
+   width: 15px;
+   height: 15px;
+   background: #aaa;
+   display: inline-block;
+   margin-right: 5px;
+}
+
+.buttons li.active {
+   background: #666; 
+}
+
+
+/*Slide colours*/
+.slides div:nth-of-type(1) {
+   background: #ff8330; 
+}
+
+.slides div:nth-of-type(2) {
+   background: #30ff83; 
+}
+
+.slides div:nth-of-type(3) {
+   background: #3083ff; 
+}

@@ -1,6 +1,0 @@
-Liste af ting der skal laves på blog funktionalitet:
-- connect til sql databasen?
-- indsæt tekst i associative værdier
-- tillad redigering fra admin siden
-- while løkke på bloglist siden til at updatere listen all the time
-
