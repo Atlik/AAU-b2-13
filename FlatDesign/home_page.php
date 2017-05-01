@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="styles/home_style.css">
 </head>
 
 <body>
@@ -24,9 +25,12 @@
     <script>window.attachEvent("onload", function() {CFInstall.check({mode: "overlay", node: "prompt"});});</script>
 <![endif]-->
 
+
 <a class="scroll-point" id="home"></a>
+
 <!-- Makes the menu bar with a following feature, so that the menu will follow the user when scrolling on the page.
 The value given to the options allows an automatic scrolling feature whereas the user will get to the desired secion indicated by anchor points throughout the code -->
+
 <div id="top">
 	<nav>
 		<ul id="menu">
@@ -51,15 +55,29 @@ The value given to the options allows an automatic scrolling feature whereas the
 
 <a class="scroll-point" id="home"></a>
 
-<div>
-	
-</div>
+<!-- forsøg på at indsætte billede, har indset at ny css skal laves eftersom style.css og styles2.css der styrer wrappers og sliding mekanism er forældede og passer til det gamle design. -->
+
+<!-- Try outs before realising that old css files should be rewamped -->
+
+<section>
+	<div id="image_home" style=" 
+		background: url(anna_catarina1.jpg) 
+		no-repeat 0px 0px; 
+		background-size: cover;">
+	</div>
+</section>
 
 <a class="scroll-point" id="blog"></a>
 
-<div>
+<section>
+	<div id="image_blog" style="
+		background: url(home_img/DSC_7480.jpg) 
+		no-repeat 0px 0px; 
+		background-size: cover;">
 	
-</div>
+	</div>
+</section>
+
 
 <a class="scroll-point" id="about"></a>
 

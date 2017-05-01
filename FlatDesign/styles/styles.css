@@ -6,7 +6,6 @@ body {
   width: 100%;
   *zoom: 1;
   font-family: 'Source Sans Pro', sans-serif;
-  background:transparent;
 }
 body:before, body:after {
   content: "";
@@ -64,19 +63,6 @@ header:after {
 section:after, header:after {
   clear: both;
 }
-
-.sectiongrey { background: #f5f6f7; }
-.sectiongreen {background:#13c4a5;} 
-.sectiongreen h2, .sectiongreen h1, .sectiongreen p { color:#fff; }
-.sectiongreen a{color:#0d803e;}
-
-.sectionblue {background:#233445;}
-.sectionorange {background:#1B8372;}
-.sectionorange h2{ color:#fff;}
-.sectionyellow {background:#f1c40f;}
-.sectionteal {background:#30c3a6;}
-.sectionteal h3, .sectionteal h3 a, .sectionteal h2, .sectionteal h1, .sectionteal p { color:#707c80; }
-
 
 /*
 Top: menu;
