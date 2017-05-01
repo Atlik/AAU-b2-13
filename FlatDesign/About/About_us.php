@@ -1,29 +1,29 @@
 <html>
     <meta charset="utf-8">
-    <link rel="stylesheet"type="text/css"href="About_us.css">
-<head>
-    <title>About us</title>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1"><![endif]-->
+    <head>
+        <title>About us</title>
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="chrome=1"><![endif]--> <!--specifies that Google Chrome frame should start if the user has it installed-->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="format-detection" content="telephone=no"/>
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-	<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+	<meta name="format-detection" content="telephone=no"/> <!--Makes sure that phonenumbers don't get flagged as links-->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" /> 
+	<link rel="dns-prefetch" href="http://fonts.googleapis.com/"> <!--The user's visible area of a web page.-->
 	<link rel="dns-prefetch" href="http://ajax.googleapis.com/">
 	<link rel="dns-prefetch" href="http://html5shim.googlecode.com/">
 	<link rel="dns-prefetch" href="http://google-analytics.com/">
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<link rel="apple-touch-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72-ipad.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114-retina.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144-retina.png">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic">
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="styles/blog_style.css">
+	<link rel="stylesheet"type="text/css"href="About_us.css">
+	
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 </head>
 
-<body>
+<body background="about_wallpaper.jpg">
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
     <style>.chromeFrameInstallDefaultStyle { width: 100%; border: 5px solid #ffa700; }</style><div id="prompt"></div>
@@ -38,19 +38,8 @@
             <li><a href="#about">About us</a></li>
 			<li><a href="#freebies">Blog</a></li>
 			<li><a href="#contact">Contact us</a></li>
-			<li><a href="#payment">Get tickets</a></li>
+			<li><a href="#payment">Buy tickets</a></li>
 		</ul>
-	
-	<form class="menu-dropdown hidden">
-		<select onchange="location = this.options[this.selectedIndex].value;">
-			<option value="#home">Home</option>
-            <option value="#about">About us</option>
-            <option value="#freebies">Blog</option>
-            <option value="#contact">Contact us</option>
-            <option value="payment">Get tickets</option>
-		</select>
-	</form>
-		<a href="#menu-footer" class="menu-btn"></a>
 	</nav>
 </div>
 
@@ -64,9 +53,9 @@
 </div>
 
 <section>
-<div class="Story">
+<div class="storySection">
     <h1>Why Worldkitchen</h1>
-    We are Anna and Catarina and this is our story.
+   <div class="theStory"> We are Anna and Catarina and this is our story.
     <br>
     In 2012 our paths crossed for the first time in Aalborg (Denmark) while studying
     <br>
@@ -81,8 +70,9 @@
     Together we are foodies, aware consumers and eager communicators. Passionate
     <br>
     about social diversity and excited about the opportunities multiculturalism offers.
-    <br><br><br><br>
-    Our staff
+    <br><br><br><br><br>
+	</div>
+    <div class="staffHeader">Our staff</div>
 	<div class=staffImages>
 		<div class="CatarinaDiv">
 		<img src="Catarina_Worldkitchen.jpg" alt="CatarinaImage" style="width: 400px; height: 400px;">
@@ -92,8 +82,75 @@
 		<img src="Anna_Worldkitchen.jpg" alt="CatarinaImage" style="width: 400px; height: 400px;">
 		</div>
 	</div>
+<div class="CatarinaText">
+	<font size=5>Catarina Bettencourt</font>
+	<br><br>
+	CEO / Founder & Owner, 33 years old, from Portugal
+	<br><br>
+	<font size="4">Catarina is the backbone of the company - from
+	<br>
+	idea to execution. She is also a freelance
+	<br>
+	researcher,
+	consumer behaviour professional,
+	<br>
+	and active community volunteer. What drives
+	<br>her is to interact with	and connect people.
+	</font>
+</div>
+
+<div class="AnnaText">
+	<font size="5">Anna Klitgaard</font>
+	<br><br>
+	Communication & PR, 44 years old, from Denmark
+	<br><br>
+	<font size="4">Anna is the company's communication
+	<br>
+	specialist and creative copy writer. She is a
+	<br>
+	part-time lecturer and full-time blogger. Having
+	<br>visited more than onehundred countries and
+	<br>
+	all seven continents as a freelance journalist,
+	<br>Anna is a true citizen of the world.
+	</font>	
+</div>
+
+<div>
+	<input type="submit" id="backButton" value="Back" onclick="goBack()"></input>
+</div>
+
 </div>
 </section>
+
+		<!---------------FOOTER BEGIN-------------------->
+	<div class="Footer1"> <!--Displays the footer of the website-->
+    <div class="menuFooter">Menu</div>
+	<div class="contactFooter">Contact</div>
+    <div class="footerBoxes">
+        <ul type="square">
+			<a href="BreadcrumbsHome.php"><li>Home</li> </a> <br> <!--Allows the users to click an anchor element and they will be taken to that section-->
+			<a href="BreadcrumbsBlog.php"><li>Blog</li> </a> <br>
+			<a href="BreadcrumbsAbout.php"><li>About</li> </a> <br>
+			<a href="BreadcrumbsContact.php"><li>Contact</li> </a> <br>
+			<a href="BreadcrumbsTicket.php"><li>Buy ticket</li> </a>
+         </ul>
+    </div>
+      
+    <div class=footerContactInfo>
+      Name (Worldkitchen) <br><br>
+      Address (Gammeltorv) <br><br>
+      Region (Aalborg) <br><br>
+      Country (Denmark) <br><br><br>
+      verdenskoekkenet@gmail.com <br><br>
+      +45 69696969
+    </div>
+    </div>
+
+   <div class="Footer2"> <!--displayed at the bottom of the page. For copyright claims-->
+    Copyright © 2017 Worldkitchen. All rights reserved.
+   </div>
+		<!---------------FOOTER END----------------->
 
 <?php
 

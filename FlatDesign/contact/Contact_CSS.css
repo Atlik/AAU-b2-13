@@ -135,12 +135,12 @@
         }
         
         .footerContactInfo{
+          
         line-height: 80%;
         font-weight: bold;
-        font-size: 18;
+        font-size: 13;
         text-align: left;
-        margin-right: 600px;
-        margin-left: 715px;
+        padding-left: 339px;
         padding-top: 10px;
         }
         

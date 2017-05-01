@@ -34,7 +34,7 @@
             <li><a href="#about">About us</a></li>
 			<li><a href="#freebies">Blog</a></li>
 			<li><a href="#contact">Contact us</a></li>
-			<li><a href="#payment">Get tickets</a></li>
+			<li><a href="#payment">Buy tickets</a></li>
 		</ul>
 	</nav>
 </div>
@@ -67,13 +67,13 @@
 		
 		<!---------------USERINPUT BEGIN----------------->
 
-  <form action="Contact_WorldKitchen.php" method="POST"> <!--Allows users to input name, mail, phonenumber, and a message and submit it-->
+  <form action="emailform_worldkitchen.php" method="POST"> <!--Allows users to input name, mail, phonenumber, and a message and submit it-->
     <div class="InformationFields">    
 		<input type="text" id="nameField" style="border:1px solid grey" name="name" placeholder= "Your Name:" required="required"> <br><br>
         <input type="text" id="mailField" style="border:1px solid grey" name="mail" placeholder= "Your Mail:" required="required"> <br><br>
         <input type="text" id="phonenumberField" style="border:1px solid grey" name="phonenumber" placeholder= "Your Phonenumber:" required="required"> <br><br>
-        <input type="text" id="messageField" style="border:1px solid grey" name="message" placeholder="Your Message:" required="required" maxlength="10"> 
-    </div>    
+		<input type="text" id="messageField" style="border:1px solid grey" name="message" placeholder="Your Message:" required="required" maxlength="10">
+	</div>    
 
 <div class="checkboxesMail"> <!--Allows user choose to whome the email should be sent to-->
   <input type="checkbox" name="checkWorldKitchen" value="Kitchen"> To the Worldkitchen's service
@@ -93,11 +93,11 @@
 <div class="FAQList">
 <ul type="disc">
 	<li><u>Where do I pay for the next event?</u></li>
-	At the menubar there is a text called "Buy ticket" By clicking on it you will get to a new site where
+	At the menubar there is a text called "Buy ticket" By clicking it you will be taken to a new site where
 	you have the opportunity to buy your ticket.
 	<br><br>
 	<li><u>How can I contact you?</u></li>
-	If you want to contact us or have a question you want answered, you can just click on the button
+	If you want to contact us or have a question you want answered, you can just click the button
 	with the text "Click here" down below.
 	<br><br>
 	<li><u>Can I write my experience from previous events?</u></li>
@@ -133,7 +133,7 @@
       Name (Worldkitchen) <br><br>
       Address (Gammeltorv) <br><br>
       Region (Aalborg) <br><br>
-      Country (Denmark) <br><br>
+      Country (Denmark) <br><br><br>
       verdenskoekkenet@gmail.com <br><br>
       +45 69696969
     </div>
@@ -142,24 +142,8 @@
    <div class="Footer2"> <!--displayed at the bottom of the page. For copyright claims-->
     Copyright © 2017 Worldkitchen. All rights reserved.
    </div>
-   <!--</section>-->
 		<!---------------FOOTER END----------------->
-<!--</div>-->
 
-<?php
-//Supposed to work with the "User input" section. Which will send an email to The world kitchen. It will send a notepad file.
-$name_Field= $_POST['name']; //Variable names that will store the values of whatever the user inputs in the textfields on the website
-$mail_Field= $_POST['mail'];
-$phone_Field= $_POST['phonenumber'];
-$message_Field= $_POST['message'];
 
-$fh = fopen("WorldKitchen Mail list.txt","w") or die("The file could not be created"); //Opens a notepad file
-	fwrite($fh, $name_Field) or die ("Could not write to file. Check if all textfields have been filled out"); //Writes the info to the file
-	/*fwrite($fh, $topic_Field) or die ("Could not write to file. Check if all textfields have been filled out");*/
-	fwrite($fh, $mail_Field) or die ("Could not write to file. Check if all textfields have been filled out");
-	fwrite($fh, $phone_Field) or die ("Could not write to file. Check if all textfields have been filled out");
-	fwrite($fh, $message_Field) or die ("Could not write to file. Check if all textfields have been filled out");
-fclose($fh); //Closes file.
-?>
 </body>
 </html>
