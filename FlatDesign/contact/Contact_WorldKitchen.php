@@ -7,6 +7,7 @@
 	<meta name="format-detection" content="telephone=no"/> <!--Makes sure that phonenumbers don't get flagged as links-->
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" /> 
 	<link rel="dns-prefetch" href="http://fonts.googleapis.com/"> <!--The user's visible area of a web page.-->
+	<script src="js/jquery.nicescroll.js" type="text/javascript"></script>
 	<link rel="dns-prefetch" href="http://ajax.googleapis.com/">
 	<link rel="dns-prefetch" href="http://html5shim.googlecode.com/">
 	<link rel="dns-prefetch" href="http://google-analytics.com/">
@@ -116,8 +117,10 @@
 </div>
 </section>
 		<!---------------FOOTER BEGIN-------------------->
+	
 	<div class="Footer1"> <!--Displays the footer of the website-->
-    <div class="menuFooter">Menu</div>
+    <section>
+	<div class="menuFooter">Menu</div>
 	<div class="contactFooter">Contact</div>
     <div class="footerBoxes">
         <ul type="square">
@@ -128,20 +131,28 @@
 			<a href="BreadcrumbsTicket.php"><li>Buy ticket</li> </a>
          </ul>
     </div>
-      
-    <div class=footerContactInfo>
+
+
+	<div class=footerContactInfo>
       Name (Worldkitchen) <br><br>
       Address (Gammeltorv) <br><br>
       Region (Aalborg) <br><br>
       Country (Denmark) <br><br><br>
       verdenskoekkenet@gmail.com <br><br>
       +45 69696969
-    </div>
-    </div>
+	</div>   
+
+	<div class="footerImages">
+	<img src="Twitter_logo.png" width="45px" height="45px">
+	<img src="Facebook_logo.png" width="45px" height="45px">
+	<img src="Instagram_logo.png" width="45px" height="45px">
+	</div> 
+</div>
 
    <div class="Footer2"> <!--displayed at the bottom of the page. For copyright claims-->
     Copyright © 2017 Worldkitchen. All rights reserved.
    </div>
+   </section>
 		<!---------------FOOTER END----------------->
 
 

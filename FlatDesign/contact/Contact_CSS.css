@@ -1,5 +1,5 @@
         #breadcrumbs{
-        padding-top: 50px;
+        padding-top: 60px;
         font-weight: bold;
         text-align: left;}
         
@@ -105,51 +105,54 @@
         padding-bottom: 24px;}
         
         .menuFooter{
+        font-style: bold;
         float:left;
-        padding-left: 450px;
-        margin-right: -500px}
+        padding-left: 24px;}
         
         .contactFooter{
-        padding-left: 565px;
-        margin-right: 400px;    
-        margin-left: 10px;}
+        font-style: bold;
+        padding-right: 450px;
+        margin-left: 30px;}
        
         .Footer1{
-        background: #0066cc;
+        background: #006699;
         color: white;
         font-size: 30;
-        padding-top: 40px;
-        padding-bottom: 60px;
-        text-align: center;
-        margin-top: -13px;}
+        padding-bottom: 30px;
+        opacity: 0.87;
+        text-align: center;}
         
         .footerBoxes{
+        background:red;
+        padding-left: 5px;
         line-height: 80%; 
         font-weight: bold;
         font-size: 18;
-        padding-top: 10px;
-        padding-left: 93px;
         float: left;
-        text-align: left;
-        margin-left: 358px;
-        }
+        text-align: left;}
+        
+        .footerImages{
+        display: inline-block;
+        background:yellow;
+          }
         
         .footerContactInfo{
-          
+    
+        padding-top: 20px;
+        background:green; 
         line-height: 80%;
-        font-weight: bold;
-        font-size: 13;
+        font-size: 15;
         text-align: left;
-        padding-left: 339px;
-        padding-top: 10px;
+        margin-left: 275px;
+        margin-right: 500px;
         }
         
         .Footer2{
-        background: #003399;
+        background: #003366;
         color: white;
         text-align: center;
-        padding: 5px;
-        font-size: 15;
+        padding: 17px;
+        font-size: 20;
         font-weight: bold;
         font-family: arial;}
         
@@ -236,6 +239,7 @@ box-shadow: 0 0 5px rgba(0,0,0,.1);
   z-index: 100;
   left:0;
   right:0;
+  margin-top: -10px;
   padding-top: 20px;
   *zoom: 1;
 }

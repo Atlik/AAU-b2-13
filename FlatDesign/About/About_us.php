@@ -7,6 +7,7 @@
 	<meta name="format-detection" content="telephone=no"/> <!--Makes sure that phonenumbers don't get flagged as links-->
 	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" /> 
 	<link rel="dns-prefetch" href="http://fonts.googleapis.com/"> <!--The user's visible area of a web page.-->
+	<script src="js/jquery.nicescroll.js" type="text/javascript"></script>
 	<link rel="dns-prefetch" href="http://ajax.googleapis.com/">
 	<link rel="dns-prefetch" href="http://html5shim.googlecode.com/">
 	<link rel="dns-prefetch" href="http://google-analytics.com/">
@@ -15,12 +16,13 @@
 	<link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="styles/blog_style.css">
 	<link rel="stylesheet"type="text/css"href="About_us.css">
-	
+<!--	
 <script>
 function goBack() {
     window.history.back();
 }
 </script>
+-->
 </head>
 
 <body background="about_wallpaper.jpg">
@@ -51,12 +53,13 @@ function goBack() {
 	&nbsp &#x25BA &nbsp
 	<a href="About_us.php"> About us </a>
 </div>
+</section>
 
 <section>
 <div class="storySection">
     <h1>Why Worldkitchen</h1>
    <div class="theStory"> We are Anna and Catarina and this is our story.
-    <br>
+    <br><br>
     In 2012 our paths crossed for the first time in Aalborg (Denmark) while studying
     <br>
     together at Aalborg University on the IMA Culture, Communication and Globalisation.
@@ -74,12 +77,14 @@ function goBack() {
 	</div>
     <div class="staffHeader">Our staff</div>
 	<div class=staffImages>
-		<div class="CatarinaDiv">
-		<img src="Catarina_Worldkitchen.jpg" alt="CatarinaImage" style="width: 400px; height: 400px;">
+		<div class="CatarinaAnnaDiv" id="CatarinaID">
+			
+		<img src="Catarina_Worldkitchen.jpg" alt="CatarinaImage" style="width: 428px; height: 447px;">
 		</div>
 
-		<div class="AnnaDiv">
-		<img src="Anna_Worldkitchen.jpg" alt="CatarinaImage" style="width: 400px; height: 400px;">
+		<div class="CatarinaAnnaDiv">
+		<img src="Anna_Worldkitchen.jpg" alt="CatarinaImage" style="width: 428px; height: 447px;">
+			
 		</div>
 	</div>
 <div class="CatarinaText">
@@ -115,17 +120,20 @@ function goBack() {
 	<br>Anna is a true citizen of the world.
 	</font>	
 </div>
-
+<!--
 <div>
 	<input type="submit" id="backButton" value="Back" onclick="goBack()"></input>
 </div>
-
+-->
 </div>
 </section>
 
 		<!---------------FOOTER BEGIN-------------------->
+	
 	<div class="Footer1"> <!--Displays the footer of the website-->
-    <div class="menuFooter">Menu</div>
+	<section>    
+	<div class="menuFooter">Menu</div>
+
 	<div class="contactFooter">Contact</div>
     <div class="footerBoxes">
         <ul type="square">
@@ -138,6 +146,7 @@ function goBack() {
     </div>
       
     <div class=footerContactInfo>
+		<div class="footerImages">
       Name (Worldkitchen) <br><br>
       Address (Gammeltorv) <br><br>
       Region (Aalborg) <br><br>
@@ -145,11 +154,17 @@ function goBack() {
       verdenskoekkenet@gmail.com <br><br>
       +45 69696969
     </div>
+		
+	<img src="Twitter_logo.png" width="75px" height="75px">
+	<img src="Facebook_logo.png" width="75px" height="75px">
+	<img src="Instagram_logo.png" width="75px" height="75px">
+	</div>
     </div>
 
    <div class="Footer2"> <!--displayed at the bottom of the page. For copyright claims-->
     Copyright © 2017 Worldkitchen. All rights reserved.
    </div>
+</section>
 		<!---------------FOOTER END----------------->
 
 <?php
