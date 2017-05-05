@@ -1,0 +1,349 @@
+.buybtn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #246995;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f628d 1px;
+  text-decoration: none;
+}
+.forside {
+  background: url(forside.jpg) 
+    no-repeat 0px 0px; 
+    background-size: cover;
+    height: 700px;
+}
+
+.blog {
+    background: url(004.jpg) 
+    no-repeat 0px 0px; 
+    background-size: cover;
+    height: 700px;
+}
+
+.contact {
+    background: url(anna_catarina1.jpg) 
+    no-repeat 0px 0px; 
+    background-size: cover;
+    height: 700px;
+}
+.padded-multiline { 
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/skyscrapers.jpg);
+  line-height: 1.4; 
+  padding: 120px 50px 50px 50px;
+  width: 400px;
+  margin: 20px auto;
+}
+.padded-multiline span { 
+  background-color: black;
+  color: #fff; 
+  display: inline;
+  padding: 0.5rem;
+  
+  /* Needs prefixing */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+main {
+  max-width: 500px;
+  margin: 20px auto;
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.buybtn:hover {
+  background: #4a7311;
+  text-decoration: none;
+}
+.wrapper { position:relative; width:1280px; }
+.parent { position:absolute; }
+        .child { position:fixed; 
+        background-color: grey;
+        top: 100px;
+        height: 10%;
+        width: 100%;
+        opacity: 0.4;
+        text-align: center;
+        text-decoration-style: inherit;
+        }
+
+        .nexteventtext {
+  font-size: 20px;
+  color: red;
+}
+
+a, a:visited, a:active {
+ color:#13c4a5;
+}
+a:hover { color:#777;}
+html{
+    -webkit-font-smoothing: antialiased;
+  
+    /*font-smooth: always ;
+    text-rendering: optimizeLegibility;
+  text-shadow: 0 0 1px rgba(255,255,255,1);*/
+}
+#buy{
+  color: green;
+  font-weight: bold;
+}
+
+/*
+Top: menu;
+indeholder det css der tillader dropdown menuen at virke
+*/
+
+#top {
+ /* background-color: #015289;
+  border-bottom: 2px solid #003355;*/
+  background:#fff; 
+  border-bottom: 1px solid #d1d4d7;
+box-shadow: 0 0 5px rgba(0,0,0,.1);
+
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  left:0;
+  right:0;
+  padding-top: 20px;
+  *zoom: 1;
+}
+#top:before, #top:after {
+  content: "";
+  display: table;
+}
+#top:after {
+  clear: both;
+}
+nav {
+  width: 100%;
+  margin: 0 auto;
+  height: 36px;
+  padding: 0 0 22px 0;
+}
+nav .logo {
+  margin-left: 8.38%;
+  float: left;
+}
+nav .logo a{
+  width: 136px;
+  height: 36px;
+  background: url(../img/logo.png);
+  background-size: 136px 36px;
+  display: block;
+}
+nav .logo a img{
+  width:100%;
+  height:auto;
+}
+nav ul {
+  width: auto;
+  display: block;
+  float: right;
+  margin-right: 15px;
+}
+nav ul li {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  vertical-align: baseline;
+  float: left;
+}
+nav ul li a {
+  color: #777777;
+  text-decoration: none;
+  width: 135px;
+  text-align: center;
+  display: block;
+  height: 41px;
+  line-height: 41px;
+  text-transform: uppercase;
+  font-weight:normal;
+}
+nav ul li a:hover {
+  background-color: #13c4a5;
+  color: #fff;
+}
+nav ul li a:active {
+  background-color: #eb5946;
+  color: #323232;
+}
+#buy nav ul li a:hover {
+  background-color: #13c4a5;
+  color: #fff;
+}
+#buy nav ul li a:active {
+  background-color: #eb5946;
+  color: #323232;
+}
+#top nav .menu-btn {
+  display:none;
+}
+
+
+/*
+Section styling
+styler elementer inde i sections
+
+*/
+
+.buybtn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #246995;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f628d 1px;
+  text-decoration: none;
+}
+
+.buybtn:hover {
+  background: #4a7311;
+  text-decoration: none;
+}
+
+/*
+
+Responsive code
+
+*/
+@media screen and (max-width: 1280px) {
+    header{
+           -moz-background-size: cover;           /* Gecko 1.9.2 (Firefox 3.6) */
+     -o-background-size: cover;           /* Opera 9.5 */
+  -webkit-background-size:cover;           /* Safari 3.0 */
+      background-size: cover;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+
+     -moz-border-image: url(../img/img-header.jpg) cover;    /* Gecko 1.9.1 (Firefox 3.5) */
+
+  background-size: cover;
+    }
+}
+@media screen and (max-width: 900px) {
+  header .content ul {
+    width: 50%;
+}
+}
+@media screen and (max-width: 800px) {
+  header .content ul {
+    width: 60%;
+}
+
+nav .logo {
+    margin-left: 15px;
+}
+nav ul li a {
+  width: 100px;
+} 
+
+ header .content {
+    padding-bottom: 66px;
+  }
+  header .content hgroup {
+    margin-bottom: 80px;
+  }
+  header .content ul li {
+    min-width: 50%;
+  
+}
+  section h2 {
+    font-size: 25px;
+    line-height: 45px;
+    width: 24%;
+  }
+  
+}
+@media screen and (max-width: 730px) {
+
+  header .content ul{
+    width:60%;
+  }
+ 
+}
+@media only screen and (min-device-width : 719px) and (max-device-width : 721px) and (-webkit-min-device-pixel-ratio : 2) and (orientation : portrait) { 
+  #footer{padding-bottom:0}
+}
+@media screen and (max-width: 600px) {
+
+  #top ul, .bottom-shadow {
+    display: none;
+  }
+  
+  #top {
+   
+    padding-top: 14px;
+    margin-top: 0;
+  }
+#top nav .menu-btn {
+    float: right;
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 22px;
+    background-image: url("menu-btn.svg");
+  background-size:64px 32px;
+  background-position:left center;
+  }
+  #top nav .menu-btn:active {
+    background-position:right center;
+  }
+  header {
+    margin-top: 60px;
+  }
+ 
+  
+  .scroll-point {
+    *zoom: 1;
+  }
+  .scroll-point:before, .scroll-point:after {
+    content: "";
+    display: table;
+  }
+  .scroll-point:after {
+    clear: both;
+  }
+
+    section article h3 {
+    font-size:42px
+  }
+ 

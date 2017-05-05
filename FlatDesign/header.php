@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic">
 	<link rel="stylesheet" type="text/css" href="styles/reset.css">
-	<link rel="stylesheet" type="text/css" href="nystyles.css">
+	<link rel="stylesheet" type="text/css" href="navcss.css">
 	<link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
 	<!--<link rel="stylesheet" type="text/css" href="styles/home_style.css">-->
 </head>
@@ -40,20 +40,13 @@ The value given to the options allows an automatic scrolling feature whereas the
 			<li><a href="#contact">Contact</a></li>
 			<li><a id="buy" href="#payment">Buy tickets</a></li>			
 		</ul>
-		<form class="menu-dropdown hidden">
-			<select onchange="location = this.option[this.selectedIndex].value;">
-				<option value="#home">Home</option>
-                <option value="#blog">Blog</option>
-            	<option value="#about">About</option>
-            	<option value="#contact">Contact</option>
-            	<option value="#payment" id="buy">Buy tickets</option>
-			</select>			
-		</form>
+			
 		<a href="#menu-footer" class="menu-btn"></a>
 			<div class="wrapper">
 				<div class="parent">
         			<div class="child">
-        				<div><p>hej</p>
+        				<div class="nexteventtext"><p style="  font-size: 22px;
+  color: white; opacity: 0.9; font-weight: bold; font-family: Verdana;">Next event: Thursday 19. April 17:30 - 21:00</p>
         			</div>
         		</div>
     		</div>

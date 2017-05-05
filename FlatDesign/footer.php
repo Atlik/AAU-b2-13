@@ -1,5 +1,7 @@
 
-
+<style>
+ul.b {list-style-type: square;}
+</style>
 
   <!-- Footer -->
 <div class="sectionblue">
@@ -7,15 +9,14 @@
   <div class="wrapper">
     <div class="left-content">
       <a id="menu-footer"></a>
-      <!--<div class="logo"><img src="img/logo.png" width="136" height="36"></div>-->
       <nav class="menu-footer">
-        <ul id="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a id="buy" href="#payment">Buy tickets</a></li>      
-    </ul>
+        <ul class="b">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a id="buy" href="#payment">Buy tickets</a></li>      
+        </ul>
       </nav>
       
     </div>
@@ -24,8 +25,8 @@
         <ul>
           <li><a href="http://twitter.com/egrappler" target="_blank" rel="nofollow" class="icon-twitter"></a></li>
           <li><a href="https://www.facebook.com/verdenskoekkenet" target="_blank" rel="nofollow" class="icon-facebook"></a></li>
-                    <li><a href="https://plus.google.com/102572598506883739879" target="_blank" rel="nofollow" class="icon-google-plus"></a></li>
-                    <li><a href="http://github.com/mshahbazsaleem" target="_blank" rel="nofollow" class="icon-github"></a></li>
+          <li><a href="https://plus.google.com/102572598506883739879" target="_blank" rel="nofollow" class="icon-google-plus"></a></li>
+          <li><a href="http://github.com/mshahbazsaleem" target="_blank" rel="nofollow" class="icon-github"></a></li>
         </ul>
 
       </div>

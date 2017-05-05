@@ -1,91 +1,51 @@
 <?php include'header.php' ?>
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 0.75;
+}
 
+</style>
 <!--Header-->
-<header>
-	<div class="wrapper" id="image_home" style=" 
-		background: url(forside.jpg) 
-		no-repeat 0px 0px; 
-		background-size: cover;">
-		<div class="content">
-		<hgroup>
-		</hgroup>
-
-
-			<div class="clear"></div>
-
-				
-			<div class="clear"></div>
-		</div>
-	</div>
-</header>
-
+<section class="forside">
 <a class="scroll-point" id="home"></a>
+	<div class="forside">
+<h1 class="padded-multiline">
+  <span>How do I add padding to subsequent lines of an inline text element?</span>
+</h1>
 
-<section>
-	<div id="image_blog" style="
-		background: url(home_img/DSC_7480.jpg) 
-		no-repeat 0px 0px; 
-		background-size: cover;">
-	
+
 	</div>
 </section>
 
 
-<a class="scroll-point" id="blog"><p>hej</p></a>
+
+
 
 
 <section>
-	<div class="separator"> 
-		<div class="line"></div>
-		<h2>hej</h2>
-		<div class="line"></div>
-	</div>
-    <div class="grid3">
-		<p>
-        
-</p>	
+<a class="scroll-point" id="blog"></a>
+<div class="blog"></div>
 
-<a class="scroll-point" id="about"><p>hej</p></a>
-
-<div>
-	<section>
-	<div class="separator"> 
-		<div class="line"></div>
-		<h2>hej</h2>
-		<div class="line"></div>
-	</div>
-    <div class="grid3">
-		<p>
-        
-</p>	
-</div>
-<div  class="sectiongrey">
-<section>
-	<div class="separator"> 
-		<div class="line"></div>
-		<h2>hej</h2>
-		<div class="line"></div>
-	</div>
-    <div class="grid3">
-		<p>
-        
-</p>	
-
-
-
-
-
-</div>
 
 </section>
-</div>
 
+
+<section>
 <a class="scroll-point" id="contact"></a>
-<p>hej</p>
-<div>
-	
-</div>
+<div class="contact"></div>
+</section>
+
 
 	
 <a class="scroll-point" id="payment"></a>
-<?php include 'footer.php' ?>
+<?php include 'footertest.php' ?>
