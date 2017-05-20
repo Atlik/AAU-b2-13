@@ -1,31 +1,69 @@
-        h1{
-        padding-bottom: 48px;
-        padding-top: 48px;
-        color: white;}
-
-        body{
-        background-image: url("about_wallpaper.jpg");}
+        .logoImage{
+        float:left;
+        clear:both;}
+        
+        .logoSize{
+        width:70px;
+        height:50px;}
+        
+        .logoTextContainer{
+        max-width: 1150px;
+        margin: 0 auto;}
+        
+        .logoText{
+        margin-left: 75px;
+        font-weight: bold;
+        font-size: 30;
+        position: absolute;
+        top: 40%;
+        float:left;}
         
         #menu{
         list-style-type: none;}
+        
+        #menu a{
+        font-weight: bold;
+        color:gray;}
+        
+        .pricetagImage{
+        width:15px;
+        height:15px;
+        float:left;
+        margin-top: 11px;
+        margin-right: -15px;}
+        
+        #Paymentstyling a{
+        color:rgb(0, 187, 61);font-weight:bold;
+        }
+        
+        h1{
+        padding-bottom: 48px;
+        padding-top: 48px;
+        color: white;
+        font-family: arial;}
 
         #breadcrumbs{
         padding-top: 50px;
         font-weight: bold;
         text-align: left;}
-
+        
+        #breadCrumbs a{
+          text-decoration: none;
+        }
+        
         .storySection{
         text-align: left;
-        background: #0099cc;
+        background: rgb(0,153,204);
         padding-left: 48px;
         padding-bottom: 48px;
         padding-right: 48px;
         margin-bottom: 48px;
         color: white;
         font-family: arial;}
-    
+
         .theStory{
-        margin-top: -40px;}
+        margin-top: -40px;
+        font-size: 19;}
 
         .staffHeader{
         padding-bottom: 48px;
@@ -42,10 +80,18 @@
         #CatarinaID{
         padding-right: 48px;}
         
+        .CatarinaSize{
+        width: 428px;
+        height: 447px;}
+        
         .CatarinaText{
         padding-top: 12px;
         font-size: 17;
         float:left;}
+        
+        .AnnaSize{
+        width: 428px;
+        height: 447px;}
         
         .AnnaText{
         padding-top: 12px;
@@ -53,7 +99,7 @@
         font-size: 17;}
 /* 
         #backButton{
-            opacity: 0.8;
+        opacity: 0.8;
         border-radius: 0px;
         background: #00CC99;
         color:white;
@@ -64,11 +110,14 @@
         font-weight: bold;}
 */
         .menuFooter{
-        float:left;}
+        float:left;
+        font-weight: bold;
+        }
         
         .contactFooter{
+        font-weight: bold;
         padding-right: 450px;
-        margin-left: 30px;}
+        padding-left: 138px;}
        
         .Footer1{
         background: #006699;
@@ -82,15 +131,26 @@
         font-weight: bold;
         font-size: 18;
         float: left;
-        text-align: left;}
+        text-align: left;
+        margin-left: -20px;}
+        
+        .footerBoxes li{
+        color: white;}
+        
+        .footerBoxes li:hover{
+        color: lightgray;}
+         
+         .footerBoxes a{
+           text-decoration: none;}
         
         .footerContactInfo{
+        float:left;
         line-height: 80%;
+        font-weight: bold;
         font-size: 15;
         text-align: left;
-        padding-left: 278px;
-        padding-top: 10px;
-        }
+        padding-left: 185px;
+        padding-top: 20px;}
         
         .Footer2{
         background: #003366;
@@ -100,6 +160,31 @@
         font-size: 20;
         font-weight: bold;
         font-family: arial;}
+        
+        .footerImages{
+        float:left;
+        margin-top: -4%;
+        margin-left: 10%;}
+        
+        #FooterTicket li{color:rgb(0, 187, 61);}
+        
+        .TwitterLogo{
+        width:48px;
+        height:48px;
+        float: left;
+        padding-right: 24px;}
+        
+        .FacebookLogo{
+        width:48px;
+        height:48px;
+        float: left;
+        padding-right: 24px;}
+        
+        .InstagramLogo{
+        width:48px;
+        height:48px;
+        float: left;
+        margin-left: -5px;}
 
 /*---------------body, wrapper og links-------------------*/
 
@@ -107,8 +192,8 @@ body {
   width: 100%;
   *zoom: 1;
   font-family: 'Source Sans Pro', sans-serif;
-  background:transparent;
-}
+  background:transparent;}
+  
 body:before, body:after {
   content: "";
   display: table;
@@ -142,34 +227,34 @@ html{
 /*--------------Sections før og efter h1,h2,h3 og p elementer i sections-----------------*/
 section{
   width: 100%;
-  max-width: 1002px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
-  *zoom: 1;
 }
+/*
 section:before,
 header:before,
 section:after,
 header:after {
   content: "";
-  display: table;
-}
+  display: table;}
 section:after, header:after {
-  clear: both;
+  clear: both;}
+*/  
+  section {
+  overflow: hidden;
+  padding-top: 48px;
+  padding-bottom:0px;}
+
+
+/*---------------body, wrapper og links-------------------*/
+
+body {
+  width: 100%;
+  *zoom: 1;
+  font-family:arial;
+  background:transparent;
 }
-
-.sectiongrey { background: #f5f6f7; }
-.sectiongreen {background:#13c4a5;} 
-.sectiongreen h2, .sectiongreen h1, .sectiongreen p { color:#fff; }
-.sectiongreen a{color:#0d803e;}
-
-.sectionblue {background:#233445;}
-.sectionorange {background:#1B8372;}
-.sectionorange h2{ color:#fff;}
-.sectionyellow {background:#f1c40f;}
-.sectionteal {background:#30c3a6;}
-.sectionteal h3, .sectionteal h3 a, .sectionteal h2, .sectionteal h1, .sectionteal p { color:#707c80; }
-
 
 /*---------------------Top: menu;indeholder det css der tillader dropdown menuen at virke-----------------------*/
 
@@ -188,24 +273,7 @@ box-shadow: 0 0 5px rgba(0,0,0,.1);
   padding-top: 20px;
   *zoom: 1;
 }
-#top:before, #top:after {
-  content: "";
-  display: table;
-}
-#top:after {
-  clear: both;
-}
 
-.menu-dropdown{
-  width: 40%;
-  display: block;
-  float: right;
-  margin:15px;
-}
-.menu-dropdown select{
-	width:100%;
-	height:24px;
-}
 nav {
   width: 100%;
   max-width: 1002px;
@@ -213,21 +281,8 @@ nav {
   height: 36px;
   padding: 0 0 22px 0;
 }
-nav .logo {
-  margin-left: 8.38%;
-  float: left;
-}
-nav .logo a{
-  width: 136px;
-  height: 36px;
-  background: url(../img/logo.png);
-  background-size: 136px 36px;
-  display: block;
-}
-nav .logo a img{
-	width:100%;
-	height:auto;
-}
+
+
 nav ul {
   width: auto;
   display: block;
@@ -255,137 +310,5 @@ nav ul li a:hover {
   background-color: #13c4a5;
   color: #fff;
 }
-nav ul li a:active {
-  background-color: #eb5946;
-  color: #323232;
-}
-#top nav .menu-btn {
-	display:none;
-}
-
-
-/*--------------------header styling-------------------*/
-
-
-header {
-  text-align: center;
- background-color: #13c4a5;
-  margin-top: 80px;
-	
- background-position: center top;
-	   -moz-background-size: 1360px auto;           /* Gecko 1.9.2 (Firefox 3.6) */
-		 -o-background-size: 1360px auto;           /* Opera 9.5 */
-	-webkit-background-size: 1360px auto;           /* Safari 3.0 */
-			background-size: 1360px auto;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
-
-	   -moz-border-image: url(../img/img-header.jpg) 1360px auto;    /* Gecko 1.9.1 (Firefox 3.5) */
-
-	background-size: 1360px auto;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/img-header.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/img-header.jpg', sizingMethod='scale')";
-}
-header .content {
-  width: 100%;
-  *zoom: 1;
-  padding: 107px 0;
-  
-}
-
-header a { color:#fff !important;}
-.border-header{
-  background: url(../img/border.png) bottom repeat-x;
-  width: 100%;
-  margin-top: -2px;
-  height: 2px;
-}
-header .content:before, header .content:after {
-  content: "";
-  display: table;
-}
-header .content:after {
-  clear: both;
-}
-header .content hgroup {
-  margin-bottom: 80px;
-}
-header .content hgroup h1 {
-  font-size: 60px;
-  color: #ffffff;
-   font-family: 'Source Sans Pro', sans-serif;
-  text-shadow: 0px 1px 0px rgba(51, 51, 51, 0.5);
-  text-transform: uppercase;
-  font-weight:bold;
-}
-header .content hgroup h2 {
-  font-size: 42px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 200;
-  color: #ffffff;
-  display: inline;
-  float: left;
-  width: 80.35714285714286%;
-  margin: 0 1.488095238095238%;
-  display: block;
-  float: none;
-  margin: 20px auto;
-  line-height: 52px;
-}
-header .content ul {
-  width: 40%;
-  display: block;
-  float: none;
-  margin: 0 auto;
-  *zoom: 1;
-}
-header .content ul:before, header .content ul:after {
-  content: "";
-  display: table;
-}
-header .content ul:after {
-  clear: both;
-}
-header .content ul li {
-  width: 50%;
-  display: block;
-  float: left;
-}
-header .content ul li a {
-  width: 100%;
-  display: block;
-  color: #323232;
-  text-decoration: none;
- 
-  line-height: 49px;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
-  
-}
-header .content ul li a:hover {
-
-}
-header .content ul li a.cta {
-  background-image: -moz-linear-gradient(48% 0%, #ff9900 0%, #ffcc00 100%);
-  background-image: -webkit-gradient(linear, 48% 0%, 48% 120%, color-stop(0, #ff9900), color-stop(1, #ffcc00));
-  background-image: -webkit-linear-gradient(#ff9900 0%, #ffcc00 100%);
-  background-image: -o-linear-gradient(#ff9900 0%, #ffcc00 100%);
-  background-image: -ms-linear-gradient(#ff9900 0%, #ffcc00 100%);
-  background-image: linear-gradient(#ff9900 0%, #ffcc00 100%);
-  margin-left: 31px;
-}
-header .content ul li a.cta:hover {
-  background-image: -moz-linear-gradient(-6% -174% -90deg, #ffc533 0%, #ffc533 100%);
-  background-image: -webkit-gradient(linear, -6% -174%, -6% -49%, color-stop(0, #ffc533), color-stop(1, #ffc533));
-  background-image: -webkit-linear-gradient(-90deg, #ffc533 0%, #ffc533 100%);
-  background-image: -o-linear-gradient(-90deg, #ffc533 0%, #ffc533 100%);
-  background-image: -ms-linear-gradient(-90deg, #ffc533 0%, #ffc533 100%);
-  background-image: linear-gradient(-90deg, #ffc533 0%, #ffc533 100%);
-}
 
 /*----------------------Section stylingstyler elementer inde i sections----------------------*/
-
-section {
-  overflow: hidden;
-  padding-top: 48px;
-  padding-bottom:0px;
-}

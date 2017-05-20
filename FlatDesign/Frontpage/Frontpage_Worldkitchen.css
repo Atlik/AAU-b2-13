@@ -1,0 +1,325 @@
+        .logoImage{
+        padding-top:3px;
+        padding-left: 7%;
+        float:left;}
+        
+        .logoTextContainer{
+        width: 100%;
+        max-width: 1002px;
+        margin: 0 auto;}
+        
+        .logoText{
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 30;
+        position: absolute;
+        top: 40%;
+        float:left;}
+
+        #menu{
+        list-style-type: none;}
+/*        
+        #breadcrumbs{
+        padding-top: 50px;
+        font-weight: bold;
+        text-align: left;}
+*/        
+        .eventTop{
+        text-align: center;   
+        padding-top: 10%;
+        background:green;}
+        
+        .eventText{
+        text-align: center;}
+        
+        .nextEvent{
+            background:red;
+            padding: 150px;
+        }
+
+/*---------------body, wrapper og links-------------------*/
+
+body {
+  width: 100%;
+  *zoom: 1;
+  font-family: 'Source Sans Pro', sans-serif;
+  background:transparent;
+}
+body:before, body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+.hidden {
+  display: none !important;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1002px;
+  margin: 0 auto;
+}
+.first {
+  margin-left: 0;
+}
+.clear {
+  clear: both;
+}
+a, a:visited, a:active {
+ color:#004A3E;
+}
+a:hover { color:#777;}
+html{
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/*--------------Sections før og efter h1,h2,h3 og p elementer i sections-----------------*/
+section{
+  width: 100%;
+  max-width: 1002px;
+  margin: 0 auto;
+  text-align: center;
+  *zoom: 1;
+}
+section:before,
+header:before,
+section:after,
+header:after {
+  content: "";
+  display: table;}
+section:after, header:after {
+  clear: both;}
+
+.sectiongrey { background: #f5f6f7; }
+.sectiongreen {background:#13c4a5;} 
+.sectiongreen h2, .sectiongreen h1, .sectiongreen p { color:#fff; }
+.sectiongreen a{color:#0d803e;}
+
+.sectionblue {background:#233445;}
+.sectionorange {background:#1B8372;}
+.sectionorange h2{ color:#fff;}
+.sectionyellow {background:#f1c40f;}
+.sectionteal {background:#30c3a6;}
+.sectionteal h3, .sectionteal h3 a, .sectionteal h2, .sectionteal h1, .sectionteal p { color:#707c80; }
+
+
+/*---------------------Top: menu;indeholder det css der tillader dropdown menuen at virke-----------------------*/
+
+#top {
+ /* background-color: #015289;
+  border-bottom: 2px solid #003355;*/
+  background:#fff;
+  border-bottom: 1px solid #d1d4d7;
+box-shadow: 0 0 5px rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  left:0;
+  right:0;
+  margin-top: -10px;
+  padding-top: 20px;
+  *zoom: 1;
+}
+#top:before, #top:after {
+  content: "";
+  display: table;
+}
+#top:after {
+  clear: both;
+}
+
+.menu-dropdown{
+  width: 40%;
+  display: block;
+  float: right;
+  margin:15px;
+}
+.menu-dropdown select{
+	width:100%;
+	height:24px;
+}
+nav {
+  width: 100%;
+  max-width: 1002px;
+  margin: 0 auto;
+  height: 36px;
+  padding: 0 0 22px 0;
+}
+nav .logo {
+  margin-left: 8.38%;
+  float: left;
+}
+nav .logo a{
+  width: 136px;
+  height: 36px;
+  background: url(../img/logo.png);
+  background-size: 136px 36px;
+  display: block;
+}
+nav .logo a img{
+	width:100%;
+	height:auto;
+}
+nav ul {
+  width: auto;
+  display: block;
+  float: right;
+  margin-right: 15px;
+}
+nav ul li {
+	font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  vertical-align: baseline;
+  float: left;
+}
+nav ul li a {
+  color: #777777;
+  text-decoration: none;
+  width: 135px;
+  text-align: center;
+  display: block;
+  height: 41px;
+  line-height: 41px;
+  text-transform: uppercase;
+  font-weight:normal;
+}
+nav ul li a:hover {
+  background-color: #13c4a5;
+  color: #fff;
+}
+nav ul li a:active {
+  background-color: #eb5946;
+  color: #323232;
+}
+#top nav .menu-btn {
+	display:none;
+}
+
+
+/*--------------------header styling-------------------*/
+
+
+header {
+  text-align: center;
+ background-color: #13c4a5;
+  margin-top: 80px;
+	
+ background-position: center top;
+	   -moz-background-size: 1360px auto;           /* Gecko 1.9.2 (Firefox 3.6) */
+		 -o-background-size: 1360px auto;           /* Opera 9.5 */
+	-webkit-background-size: 1360px auto;           /* Safari 3.0 */
+			background-size: 1360px auto;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+
+	   -moz-border-image: url(../img/img-header.jpg) 1360px auto;    /* Gecko 1.9.1 (Firefox 3.5) */
+
+	background-size: 1360px auto;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/img-header.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/img-header.jpg', sizingMethod='scale')";
+}
+header .content {
+  width: 100%;
+  *zoom: 1;
+  padding: 107px 0;
+  
+}
+
+header a { color:#fff !important;}
+.border-header{
+  background: url(../img/border.png) bottom repeat-x;
+  width: 100%;
+  margin-top: -2px;
+  height: 2px;
+}
+header .content:before, header .content:after {
+  content: "";
+  display: table;
+}
+header .content:after {
+  clear: both;
+}
+header .content hgroup {
+  margin-bottom: 80px;
+}
+header .content hgroup h1 {
+  font-size: 60px;
+  color: #ffffff;
+   font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: 0px 1px 0px rgba(51, 51, 51, 0.5);
+  text-transform: uppercase;
+  font-weight:bold;
+}
+header .content hgroup h2 {
+  font-size: 42px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: #ffffff;
+  display: inline;
+  float: left;
+  width: 80.35714285714286%;
+  margin: 0 1.488095238095238%;
+  display: block;
+  float: none;
+  margin: 20px auto;
+  line-height: 52px;
+}
+header .content ul {
+  width: 40%;
+  display: block;
+  float: none;
+  margin: 0 auto;
+  *zoom: 1;
+}
+header .content ul:before, header .content ul:after {
+  content: "";
+  display: table;
+}
+header .content ul:after {
+  clear: both;
+}
+header .content ul li {
+  width: 50%;
+  display: block;
+  float: left;
+}
+header .content ul li a {
+  width: 100%;
+  display: block;
+  color: #323232;
+  text-decoration: none;
+ 
+  line-height: 49px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+header .content ul li a:hover {
+
+}
+header .content ul li a.cta {
+  background-image: -moz-linear-gradient(48% 0%, #ff9900 0%, #ffcc00 100%);
+  background-image: -webkit-gradient(linear, 48% 0%, 48% 120%, color-stop(0, #ff9900), color-stop(1, #ffcc00));
+  background-image: -webkit-linear-gradient(#ff9900 0%, #ffcc00 100%);
+  background-image: -o-linear-gradient(#ff9900 0%, #ffcc00 100%);
+  background-image: -ms-linear-gradient(#ff9900 0%, #ffcc00 100%);
+  background-image: linear-gradient(#ff9900 0%, #ffcc00 100%);
+  margin-left: 31px;
+}
+header .content ul li a.cta:hover {
+  background-image: -moz-linear-gradient(-6% -174% -90deg, #ffc533 0%, #ffc533 100%);
+  background-image: -webkit-gradient(linear, -6% -174%, -6% -49%, color-stop(0, #ffc533), color-stop(1, #ffc533));
+  background-image: -webkit-linear-gradient(-90deg, #ffc533 0%, #ffc533 100%);
+  background-image: -o-linear-gradient(-90deg, #ffc533 0%, #ffc533 100%);
+  background-image: -ms-linear-gradient(-90deg, #ffc533 0%, #ffc533 100%);
+  background-image: linear-gradient(-90deg, #ffc533 0%, #ffc533 100%);
+}
+
+/*----------------------Section stylingstyler elementer inde i sections----------------------*/
+
+section {
+  overflow: hidden;
+  padding-top: 48px;
+  padding-bottom:0px;
+}

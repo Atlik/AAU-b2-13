@@ -1,24 +1,40 @@
 <?php
-//Supposed to work with the "User input" section. Which will send an email to The world kitchen. It will send a notepad file.
-$name_Field= $_POST['name']; //Variable names that will store the values of whatever the user inputs in the textfields on the website
+
+/*---------------------MAIL VARIABLES BEGIN------------------------*/
+ //Variable names that will store the values of whatever the user inputs in the textfields on the website
+$name_Field= $_POST['name'];
 $mail_Field= $_POST['mail'];
 $phone_Field= $_POST['phonenumber'];
 $message_Field= $_POST['message'];
 
-$fh = fopen("NEWNEWWorldKitchen Mail list.txt","w") or die("The file could not be created"); //Opens a notepad file
-	fwrite($fh, $name_Field) or die ("Could not write to file. Check if all textfields have been filled out"); //Writes the info to the file
-	/*fwrite($fh, $topic_Field) or die ("Could not write to file. Check if all textfields have been filled out");*/
-	fwrite($fh, $mail_Field) or die ("Could not write to file. Check if all textfields have been filled out");
-	fwrite($fh, $phone_Field) or die ("Could not write to file. Check if all textfields have been filled out");
-	fwrite($fh, $message_Field) or die ("Could not write to file. Check if all textfields have been filled out");
-fclose($fh); //Closes file.
+$to= "harambe420_memes@hotmail.com";
 
-?><?php
-sleep(1);
-echo"Thank you for contacting us. We will be in touch with you very soon.";
+$contactChosen='';
+$contactWorldKitchen=$_POST['checkWorldKitchen'];
+$contactJournalist=$_POST['checkJournalist'];
+$contactCEO=$_POST['checkCEO'];
+
+if($contactWorldKitchen){
+    $contactChosen="To the worldkitchen's service";
+}elseif($contactJournalist){
+    $contactChosen= "To the Jounalist";
+}elseif($contactCEO){
+    $contactChosen= "To the CEO";
+}
+
+$headers = "From $name_Field". "\n". "To: $contactChosen";
+$subject= "Worldkitchen contact";
+$body="A person with the following information has contacted you: \n
+
+Name: $name_Field \n
+Email: $mail_Field \n
+Phonenumber: $phone_Field \n
+Message: $message_Field";
+/*---------------------MAIL VARIABLES END------------------------*/
+
+mail($to, $subject, $body, $headers);
+
+header('Location:Contact_WorldKitchen.php');
 
 ?>
 
-<?php
-header('Location:nyflad.html');
-?>
