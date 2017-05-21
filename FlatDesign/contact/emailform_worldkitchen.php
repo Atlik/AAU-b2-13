@@ -7,7 +7,7 @@ $mail_Field= $_POST['mail'];
 $phone_Field= $_POST['phonenumber'];
 $message_Field= $_POST['message'];
 
-$to= "verdenskoekkenet@gmail.com";
+$to= "nikolaj730@hotmail.com";
 
 $contactChosen='';
 $contactWorldKitchen=$_POST['checkWorldKitchen'];
