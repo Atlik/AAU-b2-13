@@ -7,7 +7,7 @@ $mail_Field= $_POST['mail'];
 $phone_Field= $_POST['phonenumber'];
 $message_Field= $_POST['message'];
 
-$to= "harambe420_memes@hotmail.com";
+$to= "verdenskoekkenet@gmail.com";
 
 $contactChosen='';
 $contactWorldKitchen=$_POST['checkWorldKitchen'];
@@ -34,7 +34,7 @@ Message: $message_Field";
 
 mail($to, $subject, $body, $headers);
 
-header('Location:Contact_WorldKitchen.php');
+header('Location:Contact.html');
 
 ?>
 

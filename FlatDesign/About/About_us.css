@@ -307,8 +307,6 @@ nav ul li a {
   font-weight:normal;
 }
 nav ul li a:hover {
-  background-color: #13c4a5;
-  color: #fff;
-}
+  background: rgb(34,167,211);}
 
 /*----------------------Section stylingstyler elementer inde i sections----------------------*/
