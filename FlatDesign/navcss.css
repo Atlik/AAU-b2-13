@@ -11,7 +11,7 @@
   text-decoration: none;
 }
 .forside {
-  background: url(forside.jpg) 
+    background: url(forside.jpg) 
     no-repeat 0px 0px; 
     background-size: cover;
     height: 700px;
@@ -262,6 +262,9 @@ Responsive code
 @media screen and (max-width: 900px) {
   header .content ul {
     width: 50%;
+}
+
+
 }
 }
 @media screen and (max-width: 800px) {
